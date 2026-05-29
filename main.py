@@ -128,13 +128,6 @@ df['availability'] = df['availability'].apply(soon_vacated)
 
 
 
-from IPython.display import display
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 1000)
-pd.set_option('display.max_colwidth', None)
-
-
-
 #ENcoding string columns
 
 from sklearn.preprocessing import LabelEncoder,OneHotEncoder

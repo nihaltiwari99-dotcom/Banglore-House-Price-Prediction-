@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv(r"C:\Users\NIHAL-PC\Desktop\New folder\Data Set\Bengaluru_House_Data.csv")
+df = pd.read_csv("Bengaluru_House_Data.csv")
 
 #Handling null values
 df= df.dropna(subset = 'location')

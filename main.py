@@ -1,7 +1,7 @@
 import pandas as pd
 import numpy as np
 
-df = pd.read_csv(r"C:\Users\NIHAL-PC\Desktop\New folder\Data Set\Bengaluru_House_Data.csv")
+df = pd.read_csv("Bengaluru_House_Data.csv")
 
 #Handling null values
 df= df.dropna(subset = 'location')
@@ -125,13 +125,6 @@ def soon_vacated(x):
     else:
       return x
 df['availability'] = df['availability'].apply(soon_vacated)
-
-
-
-from IPython.display import display
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 1000)
-pd.set_option('display.max_colwidth', None)
 
 
 
